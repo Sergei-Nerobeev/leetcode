@@ -14,3 +14,7 @@ S
 #.idea/sonarlint/issuestore/index.pb,9/f/9fe84ebb15faf917b7def6236dba604453cc61e0
 ]
 -.idea/sonarlint/securityhotspotstore/index.pb,8/8/88a9255124c95bdc913197c120a8d560edc59c8e
+P
+ src/Allgoritms/IsPalindrome.java,1/7/17ea86a5dd863cc3419db96c86c4f2953a8875c3
+N
+src/Allgoritms/Palindrome.java,2/0/20982eaced6146a9fc4c455b27c0e0ac0e8e9fca

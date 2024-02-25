@@ -6,7 +6,7 @@ public class MissingNumber {
         System.out.println(MissingNumber.missingNumber(numbers));
     }
 
-    public static int missingNumber(int[] numbers) {   //TODO оценить сложность алгоритма
+    public static int missingNumber(int[] numbers) {  // O n 2
 
         for (int temp = 0; temp < numbers.length; temp++) {
             if (!isNumberIn(numbers, temp)) {

@@ -1,4 +1,4 @@
-package Allgoritms;
+package Tasks;
 
 public class MissingNumber {
     public static void main(String[] args) {

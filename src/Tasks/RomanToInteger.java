@@ -5,20 +5,38 @@ import java.util.Map;
 
 public class RomanToInteger {
     public static void main(String[] args) {
-        Map<String, Integer> romanToInt = new HashMap<>();
-        romanToInt.put("I", 1);
-        romanToInt.put("V", 5);
-        romanToInt.put("X", 10);
-        romanToInt.put("L", 50);
-        romanToInt.put("C", 100);
-        romanToInt.put("D", 500);
-        romanToInt.put("M", 1000);
-        int value = romanToInt.get("V");
-        System.out.println(value);
+        int integerValue = romanToInteger("III");
+        System.out.println(integerValue);
     }
 
+    public static Map<String, Integer> createRomanToIntegerMap() {
+        Map<String, Integer> integerValues = new HashMap<>();
+        integerValues.put("I", 1);
+        integerValues.put("V", 5);
+        integerValues.put("X", 10);
+        integerValues.put("L", 50);
+        integerValues.put("C", 100);
+        integerValues.put("D", 500);
+        integerValues.put("M", 1000);
+        return integerValues;
+    }
 
-    public int romanToInt(String s) {
-        return 0;
+    public static int romanToInteger(String romanNumber) {
+        int result = 0;
+        int maxDigit = 0;
+
+        for (int i = romanNumber.length() - 1; i >= 0; i--) {
+            String stringSymbol = String.valueOf(romanNumber.charAt(i));
+            int currentDigit = createRomanToIntegerMap().get(stringSymbol);
+
+            if (currentDigit <= maxDigit) {
+                result += currentDigit;
+
+            } else {
+                result -= currentDigit;
+            }
+            maxDigit = currentDigit;
+        }
+        return result;
     }
 }

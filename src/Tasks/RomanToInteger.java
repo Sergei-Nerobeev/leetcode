@@ -22,21 +22,21 @@ public class RomanToInteger {
     }
 
     public static int romanToInteger(String romanNumber) {
-        int result = 0;
+        int resultDigit = 0;
         int maxDigit = 0;
 
         for (int i = romanNumber.length() - 1; i >= 0; i--) {
             String stringSymbol = String.valueOf(romanNumber.charAt(i));
             int currentDigit = createRomanToIntegerMap().get(stringSymbol);
 
-            if (currentDigit <= maxDigit) {
-                result += currentDigit;
+            if (currentDigit >= maxDigit) {
+                resultDigit += currentDigit;
 
             } else {
-                result -= currentDigit;
+                resultDigit -= currentDigit;
             }
             maxDigit = currentDigit;
         }
-        return result;
+        return resultDigit;
     }
 }

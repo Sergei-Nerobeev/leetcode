@@ -14,3 +14,5 @@ M
 src/Tasks/RomanToInteger.java,7/3/73e35ffbe582e40a0af091ffe6b63141933c05a7
 P
  src/Tasks/ContainsDuplicate.java,c/0/c0156cdb64b7d83588ce6dfddd60a9581de53690
+H
+src/Tasks/IsAnagram.java,e/c/ec70736d61e26054916af4bcc016fd2885c031d1

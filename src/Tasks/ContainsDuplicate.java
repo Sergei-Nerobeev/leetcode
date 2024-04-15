@@ -17,7 +17,6 @@ public class ContainsDuplicate {
                 return true;
             }
             set.add(i);
-
         }
         return false;
     }

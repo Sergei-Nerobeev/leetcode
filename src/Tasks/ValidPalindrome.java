@@ -3,7 +3,7 @@ package Tasks;
 public class ValidPalindrome {
     public static void main(String[] args) {
 
-        System.out.println(isPalindrome("mkmk"));
+        System.out.println(isPalindrome("казарак"));
     }
 
     public static boolean isPalindrome(String string) {

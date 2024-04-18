@@ -44,7 +44,9 @@ Q.idea/sonarlint/securityhotspotstore/2/9/29d63befb06d961143690056db4af0b7205bef
 Q.idea/sonarlint/securityhotspotstore/7/3/73e35ffbe582e40a0af091ffe6b63141933c05a7,a/1/a16f669e3684d14ab46deced2a8182c8f0865b7a
 Å
 Q.idea/sonarlint/securityhotspotstore/8/8/88a9255124c95bdc913197c120a8d560edc59c8e,9/0/909762385fc6eb20f922a91c6865741308b57f2c
-K
-src/Tasks/IsPalindrome.java,1/2/1298eb18af68e4881069a1e68a1320674b1b3caa
 I
 src/Tasks/Palindrome.java,0/5/054038574a47add84d586f26b2ffcfee9b92b166
+N
+src/Tasks/MassivePractic1.java,f/b/fb2b7b8d3876c6ea167934f90a352a2f5c87ce03
+N
+src/Tasks/ValidPalindrome.java,3/3/336b4f609952f7e0556c121a34eea35ef4016e4b

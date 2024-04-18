@@ -8,4 +8,5 @@ public class ValidPalidrome {
     public static boolean isPalindrome(String s) {
         return true;
     }
+
 }

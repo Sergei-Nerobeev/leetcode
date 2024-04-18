@@ -1,6 +1,6 @@
 package Tasks;
 
-public class ValidPalidrome {
+public class ValidPalindrome {
     public static void main(String[] args) {
 
     }

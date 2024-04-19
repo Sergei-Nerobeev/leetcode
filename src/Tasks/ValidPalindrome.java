@@ -2,8 +2,8 @@ package Tasks;
 
 public class ValidPalindrome {
     public static void main(String[] args) {
-        System.out.println();
-        System.out.println(isPalindrome("казарак"));
+        String s = "A man, a plan, a canal: Panama";
+        System.out.println(isPalindrome(s));
     }
 
     public static boolean isPalindrome(String string) {

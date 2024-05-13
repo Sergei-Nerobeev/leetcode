@@ -27,7 +27,7 @@ Q.idea/sonarlint/securityhotspotstore/8/8/88a9255124c95bdc913197c120a8d560edc59c
 I
 src/tasks/Palindrome.java,4/a/4a77cefcecf45532e55a2df44547d76e37314d1a
 N
-src/tasks/ValidPalindrome.java,7/b/7bb02cbb30dc01f0edc74ed05e40ca32f8cdc5f8
+src/tasks/ValidPalindrome.java,7\b\7bb02cbb30dc01f0edc74ed05e40ca32f8cdc5f8
 V
 &src/tasks/lessons/AboutExcepcions.java,3/4/344e3c529fb65e44dba7cf7c0ea1018bc1f3983d
 K
@@ -46,3 +46,5 @@ H
 src/tasks/IsAnagram.java,7/d/7db732b761b78a77d6d889ccbe09079e013e83b7
 M
 src/tasks/RomanToInteger.java,3/4/34dda5c6a547199244f823171b57842593bc3d83
+N
+src/Tasks/ValidPalindrome.java,3\3\336b4f609952f7e0556c121a34eea35ef4016e4b

@@ -1,4 +1,4 @@
-package Tasks;
+package tasks;
 
 public class MassivePractic1 {
     public static void main(String[] args) {

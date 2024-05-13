@@ -3,7 +3,7 @@
 leetcode.iml,1/2/12e6f90224ad9190b776ceffc4cfc992904bfa64
 :
 
-.gitignore,a/5/a5cc2925ca8258af241be7e5b0381edf30266302
+.gitignore,a\5\a5cc2925ca8258af241be7e5b0381edf30266302
 S
 #.idea/sonarlint/issuestore/index.pb,9/f/9fe84ebb15faf917b7def6236dba604453cc61e0
 ]
@@ -13,7 +13,7 @@ L
 M
 src/Tasks/RomanToInteger.java,7/3/73e35ffbe582e40a0af091ffe6b63141933c05a7
 P
- src/Tasks/ContainsDuplicate.java,c/0/c0156cdb64b7d83588ce6dfddd60a9581de53690
+ src/Tasks/ContainsDuplicate.java,c\0\c0156cdb64b7d83588ce6dfddd60a9581de53690
 H
 src/Tasks/IsAnagram.java,e/c/ec70736d61e26054916af4bcc016fd2885c031d1
 E
@@ -49,4 +49,4 @@ I
 N
 src/Tasks/MassivePractic1.java,f/b/fb2b7b8d3876c6ea167934f90a352a2f5c87ce03
 N
-src/Tasks/ValidPalindrome.java,3/3/336b4f609952f7e0556c121a34eea35ef4016e4b
+src/Tasks/ValidPalindrome.java,3\3\336b4f609952f7e0556c121a34eea35ef4016e4b

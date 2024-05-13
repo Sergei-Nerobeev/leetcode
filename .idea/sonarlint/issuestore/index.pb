@@ -3,7 +3,7 @@
 leetcode.iml,1/2/12e6f90224ad9190b776ceffc4cfc992904bfa64
 :
 
-.gitignore,a/5/a5cc2925ca8258af241be7e5b0381edf30266302
+.gitignore,a\5\a5cc2925ca8258af241be7e5b0381edf30266302
 S
 #.idea/sonarlint/issuestore/index.pb,9/f/9fe84ebb15faf917b7def6236dba604453cc61e0
 ]
@@ -48,3 +48,9 @@ M
 src/tasks/RomanToInteger.java,3/4/34dda5c6a547199244f823171b57842593bc3d83
 N
 src/Tasks/ValidPalindrome.java,3\3\336b4f609952f7e0556c121a34eea35ef4016e4b
+U
+%src/tasks/lessons/massive/Runner.java,a\8\a87abb0916b7141eeddf98823a34a276670d7019
+[
++src/tasks/lessons/massive/task1/Runner.java,4\4\444c285258c270774c455014cc0d268d130f557f
+]
+-src/tasks/lessons/massive/task1/LowArray.java,f\3\f39676478e9f5f542010de8ad45a54564c3aef37

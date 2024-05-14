@@ -5,7 +5,7 @@ import java.util.Arrays;
 public class LowArray {
 
     private final int arrLength;
-    private int[] lowArr;
+    private final int[] lowArr;
 
     public LowArray(int arrLength) {
         this.arrLength = arrLength;
@@ -14,7 +14,7 @@ public class LowArray {
 
     public void print() { // печать
         for (int index = 0; index < lowArr.length; index++) {
-            System.out.println(lowArr[index] + " ");
+            System.out.print(lowArr[index] + " ");
         }
     }
 
@@ -26,20 +26,38 @@ public class LowArray {
         return Arrays.stream(lowArr).toArray();
     }
 
-    public boolean search(int num) { // поиск определенного значения
-        for (int index = 0; index < lowArr.length; index++) {
-            if (lowArr[index] == num) {
-                return true;
-            }
-        }
-        return false;
+    public void setNumber(int index, int number) { // заполнение
+         lowArr[index] = number;
+    }
+    public int getNumber(int index){ // чтение
+        return lowArr[index];
     }
 
-    public void delete(int index) { // удаление определенного значения
-        if (lowArr[index] == index) {
-            lowArr[index] = 0;
-        } else {
-            throw new RuntimeException("This " + index + " is wrong!");
+
+        public void coolSearch(int num) { // todo поиск определенного значения
+            for (int index = 0; index < lowArr.length; index++) {
+                if (lowArr[index] == num) {
+                    System.out.println(num + " found!");
+                    break;
+                } if (num == arrLength) {
+                    System.out.println("Cant find " + num);
+                    break;
+                }  {
+                    System.out.println(num + " found!");
+                }
+            }
+        }
+
+    public void delete(int num) { // удаление определенного значения
+        for (int index = 0; index < lowArr.length; index++) {
+            if (num == lowArr[index]) {
+                lowArr[index] = 0;
+                break;
+            }  else if (num != lowArr[index]){
+                System.out.println(num + " not found for delete!");
+                break;
+            }
         }
     }
 }
+

@@ -1,15 +1,20 @@
 package tasks.lessons.massive.task1;
 
-import java.util.Arrays;
-
 public class Runner {
     public static void main(String[] args) {
 
-        LowArray lowArray = new LowArray(10);
-        System.out.println(Arrays.toString(lowArray.fill(2)));
-        System.out.println(lowArray.search(9));
-        lowArray.delete(1);
+        LowArray lowArray = new LowArray(6);
+        lowArray.setNumber(0,20);
+        lowArray.setNumber(1,30);
+        lowArray.setNumber(2,40);
+        lowArray.setNumber(3,50);
+        lowArray.setNumber(4,60);
+        lowArray.setNumber(5,70);
+        System.out.println(lowArray.getNumber(1));
+        lowArray.coolSearch(80);
         lowArray.print();
+
+
 
 
     }

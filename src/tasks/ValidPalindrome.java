@@ -4,8 +4,8 @@ public class ValidPalindrome {
     public static void main(String[] args) {
 //        String s = "A man, a plan, a canal: Panama";
 //        System.out.println(isPalindrome(s));
-        System.out.println(issPalindrome("KAZAK"));
-//        switchInts();
+        System.out.println(issPalindrome("A man, a plan, a canal: Panama"));
+
     }
     //казак
 //    public static boolean isPalindrome(String s) {
@@ -33,34 +33,33 @@ public class ValidPalindrome {
 //        return true;
 //    }
 
+//    public static String reverse(String word) {  // time and memory
+//        char tempLetter;
+//        char[] wordCharArray = word.toCharArray();
+//        for (int i = 0; i < wordCharArray.length / 2; i++) {
+//            //N -> K
+//
+//            tempLetter = wordCharArray[i];
+//            wordCharArray[i] = wordCharArray[wordCharArray.length - 1 - i];
+//            wordCharArray[wordCharArray.length - 1 - i] = tempLetter;
+//
+//        }
+//        return String.valueOf(wordCharArray);
+//    }
 
-    public static String reverse(String word) {  // time and memory
-        char tempLetter;
-        char[] wordCharArray = word.toCharArray();
-        for (int i = 0; i < wordCharArray.length / 2; i++) {
-            //N -> K
-
-            tempLetter = wordCharArray[i];
-            wordCharArray[i] = wordCharArray[wordCharArray.length - 1 - i];
-            wordCharArray[wordCharArray.length - 1 - i] = tempLetter;
-
-        }
-        return String.valueOf(wordCharArray);
-    }
-
-    public static boolean isPalindrome(String word) {  // time and memory
-        char[] wordCharArray = word.toUpperCase().toCharArray();
-        int rightIndex = wordCharArray.length - 1;
-        for (int i = 0; i < wordCharArray.length / 2; i++) {
-            //A -> A
-            //space -> M
-            if (wordCharArray[i] != wordCharArray[wordCharArray.length - 1 - i]) {
-                return false;
-            }
-
-        }
-        return true;
-    }
+//    public static boolean isPalindrome(String word) {  // time and memory
+//        char[] wordCharArray = word.toUpperCase().toCharArray();
+//        int rightIndex = wordCharArray.length - 1;
+//        for (int i = 0; i < wordCharArray.length / 2; i++) {
+//            //A -> A
+//            //space -> M
+//            if (wordCharArray[i] != wordCharArray[wordCharArray.length - 1 - i]) {
+//                return false;
+//            }
+//
+//        }
+//        return true;
+//    }
 
     public static boolean issPalindrome(String word) {
         char[] wordCharArray = word.toUpperCase().toCharArray();

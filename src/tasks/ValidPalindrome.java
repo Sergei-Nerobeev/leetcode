@@ -1,9 +1,10 @@
 package tasks;
+
 public class ValidPalindrome {
     public static void main(String[] args) {
 //        String s = "A man, a plan, a canal: Panama";
 //        System.out.println(isPalindrome(s));
-        System.out.println(isPalindrome("НУШРОК"));
+        System.out.println(issPalindrome("KAZAK"));
 //        switchInts();
     }
     //казак
@@ -53,10 +54,24 @@ public class ValidPalindrome {
         for (int i = 0; i < wordCharArray.length / 2; i++) {
             //A -> A
             //space -> M
-            if(wordCharArray[i] != wordCharArray[wordCharArray.length - 1 -i]) {
-                   return false;
+            if (wordCharArray[i] != wordCharArray[wordCharArray.length - 1 - i]) {
+                return false;
             }
 
+        }
+        return true;
+    }
+
+    public static boolean issPalindrome(String word) {
+        char[] wordCharArray = word.toUpperCase().toCharArray();
+        int leftIndex = 0;
+        int rightIndex = wordCharArray.length - 1;
+        while (leftIndex < rightIndex) {
+            if (wordCharArray[leftIndex] != wordCharArray[rightIndex]) {
+                return false;
+            }
+            leftIndex++;
+            rightIndex--;
         }
         return true;
     }

@@ -4,12 +4,15 @@ public class ValidPalindrome {
     public static void main(String[] args) {
 
 //        System.out.println(isPalindrome("A man, a plan, a canal: Panama"));
-        System.out.println(isPalindrome("race a car"));
+        System.out.println(isPalindrome("KUKUK"));
 
     }
 
     public static boolean isPalindrome(String word) {
         char[] wordCharArray = word.toUpperCase().toCharArray();
+        if (word.isEmpty()) {
+            return false;
+        }
         int leftIndex = 0;
         int rightIndex = wordCharArray.length - 1;
         while (leftIndex < rightIndex) {

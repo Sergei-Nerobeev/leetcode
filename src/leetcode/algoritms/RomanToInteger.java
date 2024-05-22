@@ -1,4 +1,4 @@
-package tasks;
+package leetcode.algoritms;
 
 import java.util.HashMap;
 import java.util.Map;

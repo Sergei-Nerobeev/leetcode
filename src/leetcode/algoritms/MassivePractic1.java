@@ -1,4 +1,4 @@
-package tasks;
+package leetcode.algoritms;
 
 public class MassivePractic1 {
     public static void main(String[] args) {

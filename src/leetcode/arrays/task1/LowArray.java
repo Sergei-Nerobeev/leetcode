@@ -1,4 +1,4 @@
-package tasks.lessons.massive.task1;
+package leetcode.arrays.task1;
 
 import java.util.Arrays;
 

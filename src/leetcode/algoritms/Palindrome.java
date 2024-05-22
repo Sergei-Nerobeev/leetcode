@@ -1,4 +1,4 @@
-package tasks;
+package leetcode.algoritms;
 
 public class Palindrome {
     public static void main(String[] args) {

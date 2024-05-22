@@ -1,4 +1,4 @@
-package tasks;
+package leetcode.algoritms;
 
 public class MissingNumber {
     public static void main(String[] args) {

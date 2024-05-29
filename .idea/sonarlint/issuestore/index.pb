@@ -48,3 +48,5 @@ U
 +src/leetcode/algoritms/ValidPalindrome.java,2/9/29374939c5e2d55af692d5e96973d79136850daa
 Z
 *src/leetcode/algoritms/RomanToInteger.java,0/6/0631c67e72a98c1f6a10ce90e216c1522a428f88
+U
+%src/leetcode/arrays/task3/Runner.java,9/5/95d8859607d58ba8fa0517d0c91b81fd530e1466

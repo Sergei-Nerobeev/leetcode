@@ -5,6 +5,9 @@ public class BubbleSort {
 
         int[] arr = {2, 56, 5, 1, 33};
         bubbleSort(arr);
+        for (int i = 0; i < arr.length; i++) {
+            System.out.print(arr[i] + " ");
+        }
     }
 
     public static void bubbleSort(int[] arr) {

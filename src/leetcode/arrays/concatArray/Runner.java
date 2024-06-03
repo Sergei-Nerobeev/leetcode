@@ -42,6 +42,16 @@ public class Runner {
         }
     }
 
+    public static String[] halfOfStringArray(String[] letters) {
+        int length = letters.length;
+        int halflength = length / 2;
+        String result[] = new String[halflength];
+        for (int i = 0; i < halflength; i++) {
+            result[i] = letters[i];
+        }
+        return result;
+    }
+
     public static int[] repeatArray(int[] num) {
         int len = num.length;
         int[] res = new int[len * 2];
@@ -70,20 +80,23 @@ public class Runner {
         return result;
     }
 
-    public static String[] halfOfStringArray(String[] letters) {
-        int length = letters.length;
-        int halflength = length / 2;
-        String result[] = new String[halflength];
-        for (int i = 0; i < halflength; i++) {
-            result[i] = letters[i];
+
+    //    инпут - aabbba
+    //    output - 2a3b1a
+    public static String archLetters(String letters) {
+        // проверка входных данных
+        if (letters.isEmpty()) {
+            return null;
         }
-        return result;
-    }
-
-
- //   инпут - aabbba
-//    output - 2a3b1a
-    public static void archiveInfo(String letter) {
-
+        // обьект класса для сборки результирующей строки
+        StringBuilder result = new StringBuilder();
+        int count = 0;
+        for (int i = 1; i < letters.length(); i++) {
+            if (letters.charAt(i) == letters.charAt(i - 1)) {
+                count++;
+            } else {
+                result.charAt(count); // todo
+            }
+        } return result.toString();
     }
 }

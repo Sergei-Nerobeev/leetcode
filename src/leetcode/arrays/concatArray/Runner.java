@@ -83,20 +83,27 @@ public class Runner {
 
     //    инпут - aabbba
     //    output - 2a3b1a
-    public static String archLetters(String letters) {
+    public static String archLetters(String letters) { // todo test
         // проверка входных данных
         if (letters.isEmpty()) {
-            return null;
+            return letters;
         }
         // обьект класса для сборки результирующей строки
         StringBuilder result = new StringBuilder();
-        int count = 0;
+        int count = 1;
+        char previous;
+        char current;
         for (int i = 1; i < letters.length(); i++) {
-            if (letters.charAt(i) == letters.charAt(i - 1)) {
+            current = letters.charAt(i);
+            previous = letters.charAt(i - 1);
+            if (current == previous) {
                 count++;
             } else {
-                result.charAt(count); // todo
+                result.append(count).append(previous);
+                count = 1;
             }
-        } return result.toString();
+        }
+        result.append(count).append(letters.charAt(letters.length() - 1));
+        return result.toString();
     }
 }

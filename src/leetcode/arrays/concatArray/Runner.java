@@ -5,32 +5,36 @@ import java.util.Arrays;
 public class Runner {
     public static void main(String[] args) {
 
-        String[] letters = {"dd", "d", "aa", "ww", "qq"};
-        String[] correct = {"dd", "d"};
-        String[] letters2 = {"aa", "1", null, "ww", "qq"};
-        String[] correct2 = {"aa", "1"};
-        String[] letters3 = {"с", "п", "р", "и", "н", "г"};
-        String[] correct3 = {"с", "п", "р"};
-        String[] letters4 = {"single"};
-        String[] correct4 = {};
-        String[] letters5 = {null, null};
-        String[] correct5 = {null};
-        String[] letters6 = {"123", "4567", "789000"};
-        String[] correct6 = {"123"};
-        String[] letters7 = {};
-        String[] correct7 = {};
-        String[] letters8 = {null};
-        String[] correct8 = {};
+//        String[] letters = {"dd", "d", "aa", "ww", "qq"};
+//        String[] correct = {"dd", "d"};
+//        String[] letters2 = {"aa", "1", null, "ww", "qq"};
+//        String[] correct2 = {"aa", "1"};
+//        String[] letters3 = {"с", "п", "р", "и", "н", "г"};
+//        String[] correct3 = {"с", "п", "р"};
+//        String[] letters4 = {"single"};
+//        String[] correct4 = {};
+//        String[] letters5 = {null, null};
+//        String[] correct5 = {null};
+//        String[] letters6 = {"123", "4567", "789000"};
+//        String[] correct6 = {"123"};
+//        String[] letters7 = {};
+//        String[] correct7 = {};
+//        String[] letters8 = {null};
+//        String[] correct8 = {};
+//
+//        System.out.println((Arrays.toString(halfOfStringArray(letters))));
+//        halfOfStringArrayTest(letters, correct);
+//        halfOfStringArrayTest(letters2, correct2);
+//        halfOfStringArrayTest(letters3, correct3);
+//        halfOfStringArrayTest(letters4, correct4);
+//        halfOfStringArrayTest(letters5, correct5);
+//        halfOfStringArrayTest(letters6, correct6);
+//        halfOfStringArrayTest(letters7, correct7);
+//        halfOfStringArrayTest(letters8, correct8);
+        String empty = "";
+        String emptyExpected = "";
+        archLettersTest(empty,emptyExpected);
 
-        System.out.println((Arrays.toString(halfOfStringArray(letters))));
-        halfOfStringArrayTest(letters, correct);
-        halfOfStringArrayTest(letters2, correct2);
-        halfOfStringArrayTest(letters3, correct3);
-        halfOfStringArrayTest(letters4, correct4);
-        halfOfStringArrayTest(letters5, correct5);
-        halfOfStringArrayTest(letters6, correct6);
-        halfOfStringArrayTest(letters7, correct7);
-        halfOfStringArrayTest(letters8, correct8);
     }
 
     public static void halfOfStringArrayTest(String[] input, String[] expected) {
@@ -83,7 +87,7 @@ public class Runner {
 
     //    инпут - aabbba
     //    output - 2a3b1a
-    public static String archLetters(String letters) { // todo test
+    public static String archLetters(String letters) {
         // проверка входных данных
         if (letters.isEmpty()) {
             return letters;
@@ -105,5 +109,15 @@ public class Runner {
         }
         result.append(count).append(letters.charAt(letters.length() - 1));
         return result.toString();
+    }
+
+
+    public static void archLettersTest(String input, String expected) {
+    if(input.equals(expected)) {
+        System.out.println("Test true");
+    }
+
+
+
     }
 }

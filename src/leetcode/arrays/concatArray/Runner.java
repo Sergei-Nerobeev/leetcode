@@ -4,7 +4,6 @@ import java.util.Arrays;
 
 public class Runner {
     public static void main(String[] args) {
-
 //        String[] letters = {"dd", "d", "aa", "ww", "qq"};
 //        String[] correct = {"dd", "d"};
 //        String[] letters2 = {"aa", "1", null, "ww", "qq"};
@@ -33,8 +32,37 @@ public class Runner {
 //        halfOfStringArrayTest(letters8, correct8);
         String empty = "";
         String emptyExpected = "";
-        archLettersTest(empty,emptyExpected);
+        String word1 = "wwEEq";
+        String expectedWord1 = "2w2E1q";
+        String word2 = "234450";
+        String expectedWord2 = "1213241510";
+        String word3 = "@*%$";
+        String expectedWord3 = "1@1*1%1$";
+        String word4 = "d";
+        String expectedWord4 = "1d";
+        String word5 = "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa";
+        String expectedWord5 = "35a";
+        String word6 = null;
+        String expectedWord6 = "null";
+        archLettersTest(empty, emptyExpected);
+        archLettersTest(word1, expectedWord1);
+        archLettersTest(word2, expectedWord2);
+        archLettersTest(word3, expectedWord3);
+        archLettersTest(word4, expectedWord4);
+        archLettersTest(word5, expectedWord5);
+        archLettersTest(word6, expectedWord6);
+    }
 
+    public static void archLettersTest(String actual, String expected) {
+        if (actual == null) { //todo in test!
+          return;
+        }
+        if (archLetters(actual).equals(expected)){
+            System.out.println("Test true");
+        }
+        else {
+            System.out.println("Test false");
+        }
     }
 
     public static void halfOfStringArrayTest(String[] input, String[] expected) {
@@ -84,14 +112,17 @@ public class Runner {
         return result;
     }
 
-
     //    инпут - aabbba
     //    output - 2a3b1a
-    public static String archLetters(String letters) {
+    public static String archLetters(String letters){
         // проверка входных данных
+        if (letters == null) {
+            return null;
+        }
         if (letters.isEmpty()) {
             return letters;
         }
+
         // обьект класса для сборки результирующей строки
         StringBuilder result = new StringBuilder();
         int count = 1;
@@ -111,13 +142,4 @@ public class Runner {
         return result.toString();
     }
 
-
-    public static void archLettersTest(String input, String expected) {
-    if(input.equals(expected)) {
-        System.out.println("Test true");
-    }
-
-
-
-    }
 }

@@ -54,9 +54,9 @@ public class Runner {
     }
 
     public static void archLettersTest(String actual, String expected) {
-        if (actual == null) { //todo in test!
-          return;
-        }
+//        if (actual == null) { //todo in test!
+//          return;
+//        }
 
         if (archLetters(actual).equals(expected)){
             System.out.println("Test true");

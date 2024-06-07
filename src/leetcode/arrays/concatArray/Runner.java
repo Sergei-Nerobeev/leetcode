@@ -57,6 +57,7 @@ public class Runner {
         if (actual == null) { //todo in test!
           return;
         }
+
         if (archLetters(actual).equals(expected)){
             System.out.println("Test true");
         }

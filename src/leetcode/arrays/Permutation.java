@@ -15,6 +15,7 @@ public class Permutation {
         int n = nums.length;
         int[] ans = new int[n];
         for (int i = 0; i < n; i++) {
+
             // nums[i] дает индекс для доступа к элементу в nums
             // nums[nums[i]] дает элемент в nums по индексу nums[i]
 //            Итерация по каждому элементу массива nums

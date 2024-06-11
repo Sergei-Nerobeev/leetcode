@@ -52,3 +52,5 @@ Z
 +src/leetcode/arrays/concatArray/Runner.java,d\e\de433198307849afc5e7a656bab8465719c18b9c
 d
 4src/leetcode/arrays/concatArray/ArchLettersTest.java,5\2\523d479a034575f7893180fbfcab0d0d0347dd28
+T
+$src/leetcode/arrays/Permutation.java,1\3\1310c0fb913f84ab6b6596a879ba564904d0dc39

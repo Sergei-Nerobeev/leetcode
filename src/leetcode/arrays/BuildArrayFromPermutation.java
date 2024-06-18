@@ -1,6 +1,6 @@
 package leetcode.arrays;
 
-public class Permutation {
+public class BuildArrayFromPermutation {
     public static void main(String[] args) {
 
         int[] nums = {2, 0, 1};

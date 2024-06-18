@@ -1,4 +1,4 @@
-package leetcode.arrays.task2;
+package leetcode.my.task2;
 
 public class MaxVolumeMassive {
     public static void main(String[] args) {

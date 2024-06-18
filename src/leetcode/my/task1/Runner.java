@@ -1,4 +1,4 @@
-package leetcode.arrays.task1;
+package leetcode.my.task1;
 
 public class Runner {
     public static void main(String[] args) {

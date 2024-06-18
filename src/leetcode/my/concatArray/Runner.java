@@ -1,4 +1,4 @@
-package leetcode.arrays.concatArray;
+package leetcode.my.concatArray;
 
 import java.util.Arrays;
 

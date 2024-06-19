@@ -26,14 +26,8 @@ G.idea/sonarlint/issuestore/1/2/12e6f90224ad9190b776ceffc4cfc992904bfa64,8/b/8b
 Q.idea/sonarlint/securityhotspotstore/8/8/88a9255124c95bdc913197c120a8d560edc59c8e,9/0/909762385fc6eb20f922a91c6865741308b57f2c
 R
 "src/leetcode/sorts/BubbleSort.java,2/9/298f226024f3769b87498bdcd5a1ea6e12f367c6
-W
-'src/leetcode/arrays/task1/LowArray.java,0/3/038c2b37ea3888276dd67687f506140013eaeac2
 Y
 )src/leetcode/algoritms/MissingNumber.java,9/9/9981f5ebc40a244847a3a9cf4abba0060e2341bd
-_
-/src/leetcode/arrays/task2/MaxVolumeMassive.java,b/7/b7da05f23f69459b9191c227b5c50d285abd82a9
-U
-%src/leetcode/arrays/task1/Runner.java,5/c/5ce5ab4727022d3678382030ce73059878bc6870
 R
 "src/leetcode/algoritms/TwoSum.java,8/3/839740c192eaa1de6a30b926311eafb4a51d3d54
 V
@@ -48,12 +42,6 @@ U
 +src/leetcode/algoritms/ValidPalindrome.java,2/9/29374939c5e2d55af692d5e96973d79136850daa
 Z
 *src/leetcode/algoritms/RomanToInteger.java,0/6/0631c67e72a98c1f6a10ce90e216c1522a428f88
-[
-+src/leetcode/arrays/concatArray/Runner.java,d/e/de433198307849afc5e7a656bab8465719c18b9c
-d
-4src/leetcode/arrays/concatArray/ArchLettersTest.java,5/2/523d479a034575f7893180fbfcab0d0d0347dd28
-T
-$src/leetcode/arrays/Permutation.java,1/3/1310c0fb913f84ab6b6596a879ba564904d0dc39
 b
 2src/leetcode/arrays/BuildArrayFromPermutation.java,9/5/95af015c8a735b3d20fdc4b84f176d789d60bac3
 [

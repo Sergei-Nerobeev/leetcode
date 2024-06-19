@@ -6,7 +6,7 @@ public class FinalValueAfterOperations {
     public static void main(String[] args) {
         String[] operations = new String[]{"--X", "++X", "X++"};
         System.out.println(Arrays.stream(operations).toList());
-        System.out.println(finalValueAfterOperations(operations));
+        System.out.println(finalValueAfterOperations2(operations));
     }
 
     public static int finalValueAfterOperations(String[] operations) {
@@ -18,6 +18,18 @@ public class FinalValueAfterOperations {
                 x--;
             }
 
+        }
+        return x;
+    }
+    public static int finalValueAfterOperations2(String[] operations) {
+        int x = 0;
+        for (String operation : operations) {
+         switch (operation) {
+              case "++X", "X++" -> x++;
+              case "--X", "X--" -> x--;
+              default -> {
+              }
+          };
         }
         return x;
     }

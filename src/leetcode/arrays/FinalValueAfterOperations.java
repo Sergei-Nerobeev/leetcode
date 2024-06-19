@@ -4,21 +4,22 @@ import java.util.Arrays;
 
 public class FinalValueAfterOperations {
     public static void main(String[] args) {
-        String[] operations = new String[]{"--X", "++X", "X++", "X--"};
+        String[] operations = new String[]{"--X", "++X", "X++"};
         System.out.println(Arrays.stream(operations).toList());
+        System.out.println(finalValueAfterOperations(operations));
     }
 
     public static int finalValueAfterOperations(String[] operations) {
-        int x = 0; // todo array?
-        String increment = "++X";
-        String increment2 = "X++";
-        String decrement = "--X";
-        String decrement2 = "X--";
-        for (int i = 0; i < operations.length; i++) {
+        int x = 0;
+        for (String operation : operations) {
+            if (operation.equals("++X") || operation.equals("X++")) {
+                x++;
+            } else if ((operation.equals("--X") || operation.equals("X--"))) {
+                x--;
+            }
 
-            if (Arrays.stream(operations).distinct() == increment.lines()) x = x + 1;
         }
-        return 0;
+        return x;
     }
 
 }

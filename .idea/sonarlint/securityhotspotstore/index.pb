@@ -56,3 +56,5 @@ Q
 0src/leetcode/my/concatArray/ArchLettersTest.java,3/e/3e0b987d97ce42e4f430b452fd525b8541391567
 W
 'src/leetcode/my/concatArray/Runner.java,7/2/7212fbe382766b4a2d59fdcd30ae987c062107ce
+Z
+*src/leetcode/arrays/NumberOfGoodPairs.java,8/6/8694ea42f5a2b2a1b18dde35040b6af51d5cc672

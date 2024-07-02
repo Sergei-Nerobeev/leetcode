@@ -11,14 +11,14 @@ public class ShuffleTheArray {
     }
 
     public static int[] shuffle(int[] nums, int n) {
-        int temp = 0;
-        int [] result = new int[nums.length];
-        for (int i = 1; i < nums.length; i++) {
-            temp = nums[i + 1];
-            nums[i + 1] = nums[i + 2];
-            nums[i + 2] = temp;
+        int [] result = new int[2 * n];
+        for (int i = 0; i < nums.length; i++) {
+           result[n * i] = nums[i];
+           result[n * i + 1] = nums[n + 1];
+
+
         }
-        return nums;
+        return result;
     }
 
 

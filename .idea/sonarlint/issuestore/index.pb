@@ -43,11 +43,11 @@ U
 Z
 *src/leetcode/algoritms/RomanToInteger.java,0/6/0631c67e72a98c1f6a10ce90e216c1522a428f88
 b
-2src/leetcode/arrays/BuildArrayFromPermutation.java,9/5/95af015c8a735b3d20fdc4b84f176d789d60bac3
+2src/leetcode/arrays/BuildArrayFromPermutation.java,9\5\95af015c8a735b3d20fdc4b84f176d789d60bac3
 [
 +src/leetcode/my/task2/MaxVolumeMassive.java,c/5/c5897746730bcea36965b67adb8628084c29326f
 b
-2src/leetcode/arrays/FinalValueAfterOperations.java,a/b/ab209b3e2eb3d357289fbeb83d666d4450f27999
+2src/leetcode/arrays/FinalValueAfterOperations.java,a\b\ab209b3e2eb3d357289fbeb83d666d4450f27999
 S
 #src/leetcode/my/task1/LowArray.java,e/f/ef9b68b68412d93d7e3e859d2822761f73f1985e
 Q
@@ -56,7 +56,5 @@ Q
 0src/leetcode/my/concatArray/ArchLettersTest.java,3/e/3e0b987d97ce42e4f430b452fd525b8541391567
 W
 'src/leetcode/my/concatArray/Runner.java,7/2/7212fbe382766b4a2d59fdcd30ae987c062107ce
-Z
-*src/leetcode/arrays/NumberOfGoodPairs.java,8/6/8694ea42f5a2b2a1b18dde35040b6af51d5cc672
 X
-(src/leetcode/arrays/ShuffleTheArray.java,c/7/c7b3b38bc049806af867d56de89d3762dcb1a1e8
+(src/leetcode/arrays/ShuffleTheArray.java,c\7\c7b3b38bc049806af867d56de89d3762dcb1a1e8

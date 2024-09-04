@@ -1,4 +1,4 @@
-package leetcode.myarrays;
+package leetcode.my.myarrays;
 
 
 public class Patient {
@@ -9,15 +9,6 @@ public class Patient {
         this.previous = previous;
         this.name = name;
     }
-
-    public Patient getPrevious() {
-        return previous;
-    }
-
-    public String getName() {
-        return name;
-    }
-
 
     @Override
     public String toString() {

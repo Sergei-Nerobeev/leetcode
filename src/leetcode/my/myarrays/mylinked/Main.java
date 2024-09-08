@@ -1,4 +1,4 @@
-package leetcode.my.myarrays;
+package leetcode.my.myarrays.mylinked;
 
 public class Main {
     public static void main(String[] args) {

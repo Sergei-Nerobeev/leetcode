@@ -1,4 +1,4 @@
-package leetcode.my.myarrays.mylinked.reverstring;
+package leetcode.my.myarrays.reverstring;
 
 public class Main {
     public static void main(String[] args) {

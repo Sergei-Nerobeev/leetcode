@@ -1,6 +1,5 @@
 package leetcode.my.myarrays.removeElement;
 
-import java.util.Random;
 
 public class Main {
     public static void main(String[] args) {
@@ -24,7 +23,7 @@ public class Main {
         // положить новое значение в элемент массива по индексу fruitIndex
         // вместо фрукта установить пустую строку
         fruits[fruitIndex] = "";
-        // эелемент с индексом fruitIndex передвинуть на последнюю позицию массива
+        // элемент с индексом fruitIndex передвинуть на последнюю позицию массива
         for (int i = fruitIndex; i < fruits.length - 1; i++) {
             var temp = fruits[i];
             // свап элементов: i и  i + 1

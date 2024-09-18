@@ -6,9 +6,9 @@ public class Main {
         String[] fruits = {"apple", "banana", "cherry", "mango"};
 
         removeFruit(fruits, "cherry");
-
     }
 
+    // метод удаляет определенный фрукт из массива
     private static void removeFruit(String[] fruits, String fruit) {
         int fruitIndex = -1;
         // нахожу индекс фрукта, который нужно удалить

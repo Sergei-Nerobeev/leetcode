@@ -5,12 +5,13 @@ import java.util.Arrays;
 public class Main {
     public static void main(String[] args) {
 
-        int[] array = {2, 1, 3, 5, 4};
+        int[] array = {2, 3};
 //        System.out.println(Arrays.toString(getReversInt(array)));
         System.out.println(Arrays.toString(getSorted(array)));
 
     }
 
+    // переворачивает массив инт
     public static int[] getReversInt(int[] array) {
         int[] reversArray = new int[array.length];
         for (int i = 0; i < array.length; i++) {
@@ -19,14 +20,17 @@ public class Main {
         return reversArray;
     }
 
+    // сортирует по возрастанию
     public static int[] getSorted(int[] array) {
         int[] sortedArray = new int[array.length];
-        int temp = -1;
-        for (int i = 0; i < array.length; i++) {
-            if (array[i] > array[i + 1]) {
-                temp = array[i];
-                sortedArray[i] = temp;
+        for (int i = 1; i < array.length; i++) {
+            int temp;
+            temp = array[0];
+            if (temp < array[i]) {
+                sortedArray[i - 1] = temp;
+                sortedArray[i + 1] = array[i];
             }
-        } return sortedArray;
+        }
+        return sortedArray;
     }
 }

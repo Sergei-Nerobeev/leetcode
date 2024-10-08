@@ -6,6 +6,7 @@ public class Test {
     public static void main(String[] args) {
         minElementTestSuccess();
         minElementTestNullElement();
+        borderCheck();
     }
 
     static void minElementTestSuccess() {
@@ -37,5 +38,18 @@ public class Test {
         }
         throw new AssertionError("No exception");
     }
+
     // min first and min last
+    static void borderCheck() {
+        long[] numbers = {6, 34, -3, 569778};
+        var expected = 5;
+        var actual = minElement(numbers);
+        for (int i = 0; i < numbers.length; i++) { // ???
+            if (actual == expected) {
+                System.out.println("First number is: " + expected);
+                break;
+            }
+            } System.out.println("Wrong number");
+    }
 }
+

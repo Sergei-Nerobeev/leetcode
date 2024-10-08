@@ -37,5 +37,6 @@ public class Test {
         }
         throw new AssertionError("No exception");
     }
+
     // min first and min last
 }

@@ -5,7 +5,8 @@ import java.util.NoSuchElementException;
 
 public class BubbleSort {
   public static void main(String[] args) {
-    int[] numbers = {120, 70, 5, 800,5890};
+    int[] numbers = {120, 70, 5};
+
     System.out.println(Arrays.toString(bubbleSort(numbers)));
   }
 

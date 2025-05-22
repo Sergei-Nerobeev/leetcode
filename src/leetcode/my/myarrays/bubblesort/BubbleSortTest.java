@@ -31,7 +31,9 @@ public class BubbleSortTest {
 
     int[] input = {4000, 2, 70, 900};
     int[] expected = {2, 70, 900, 4000};
+
     int[] result = bubbleSort(input);
+
     assertArrayEquals(expected, result);
 
   }
@@ -41,7 +43,9 @@ public class BubbleSortTest {
 
     int[] input = {4000};
     int[] expected = {4000};
+
     int[] result = bubbleSort(input);
+
     assertArrayEquals(expected, result);
 
   }

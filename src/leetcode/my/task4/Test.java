@@ -18,7 +18,7 @@ public class Test {
         if (expected != actual) {
             throw new AssertionError("Numbers are not equal");
         } else {
-            System.out.println("Test is good!");
+            System.out.println("GroupCheckerTest is good!");
         }
     }
 
@@ -30,7 +30,7 @@ public class Test {
         } catch (IllegalArgumentException exception) {
 
             if ("Null or empty array!".equals(exception.getMessage())) {
-                System.out.println("Test is good!");
+                System.out.println("GroupCheckerTest is good!");
                 return;
             }
         } catch (Exception exception) {

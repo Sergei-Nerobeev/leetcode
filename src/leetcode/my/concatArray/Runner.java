@@ -59,19 +59,19 @@ public class Runner {
 //        }
 
         if (archLetters(actual).equals(expected)){
-            System.out.println("Test true");
+            System.out.println("GroupCheckerTest true");
         }
         else {
-            System.out.println("Test false");
+            System.out.println("GroupCheckerTest false");
         }
     }
 
     public static void halfOfStringArrayTest(String[] input, String[] expected) {
         String[] result = halfOfStringArray(input);
         if (Arrays.equals(result, expected)) {
-            System.out.println("Test true");
+            System.out.println("GroupCheckerTest true");
         } else {
-            System.out.println("Test false");
+            System.out.println("GroupCheckerTest false");
         }
     }
 

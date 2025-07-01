@@ -6,7 +6,7 @@ import java.util.NoSuchElementException;
 
 import static org.junit.Assert.*;
 
-public class BubbleSortTest {
+public class BubbleSortTestGroupWithX {
 
   public static int[] bubbleSort(int[] numbers) {
 

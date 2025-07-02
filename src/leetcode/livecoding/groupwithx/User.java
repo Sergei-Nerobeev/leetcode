@@ -14,14 +14,14 @@ public class User {
     }
 
     // метод ищет юзера в группах, возвращает правда если название группы начинается с "Х", если нет ложь
-    boolean isGroupWithX(User user) {
+    boolean isGroupWithX(Group groupToCheck) {
         // проверка на null
-        if (user == null) {
+        if (groupToCheck == null) {
             throw new IllegalArgumentException("User is null!");
         }
         // перебор групп
-        for (Group group : user.groups) {
-            if (group.toString().startsWith("X")) {
+        for (Group filteredGroup : groups) {
+            if (groupToCheck.toString().startsWith("X")) {
                 return true;
             }
         }

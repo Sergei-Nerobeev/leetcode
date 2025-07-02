@@ -20,8 +20,4 @@ public class Group {
     public void setUser(User user) {
         this.user = user;
     }
-
-    public void addUserInGroup(User user, Group group) {
-        group.setUser(user);
-    }
 }

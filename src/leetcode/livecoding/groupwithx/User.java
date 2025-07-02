@@ -8,27 +8,22 @@ public class User {
     private final String name;
     private final List<Group> groups;
 
-    public User(String name, List<Group> groups) {
+    public User(String name) {
         this.name = name;
         this.groups = new ArrayList<>();
     }
 
-
-
     // метод ищет юзера в группах, возвращает правда если название группы начинается с "Х", если нет ложь
-    public boolean isGroupWithX(List <Group> groupsToCheck) {
+    public boolean isGroupWithX(List<Group> groupsToCheck) {
         // проверка на null
-        if (groupsToCheck == null) {
-            throw new IllegalArgumentException("Group is null!");
-        }
-        // перебор групп
-        for (Group filteredGroup : groupsToCheck) {
-            if (groupsToCheck.toString().startsWith("X")) {
-                return true;
+        if (groupsToCheck != null) {
+            for (Group filteredGroup : groupsToCheck) {
+                if (filteredGroup.getTitle().startsWith("X")) {
+                    return true;
+                }
             }
         }
         return false;
     }
-
 
 }

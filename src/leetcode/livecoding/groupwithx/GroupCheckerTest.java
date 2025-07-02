@@ -6,8 +6,7 @@ import org.junit.jupiter.api.DisplayName;
 
 import java.util.List;
 
-import static org.junit.jupiter.api.Assertions.assertThrows;
-import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.junit.jupiter.api.Assertions.*;
 
 @DisplayName("GroupChecker Test")
 public class GroupCheckerTest {
@@ -20,8 +19,6 @@ public class GroupCheckerTest {
 
     @BeforeEach
     void setUp() {
-
-
         groupOne.setUser(userOne);
         groupTwo.setUser(userTwo);
         groups.add(groupOne);
@@ -31,9 +28,10 @@ public class GroupCheckerTest {
     @Test
     @DisplayName("Should return false when user or group null")
     public void is_User_Null_test() {
+        Group groupNull = null;
         //act
         userOne.isGroupWithX(null);
         //assertions
-        assertThrows(User.class,)
+        assertFalse()
     }
 }

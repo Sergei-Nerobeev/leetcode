@@ -13,15 +13,17 @@ public class User {
         this.groups = new ArrayList<>();
     }
 
+
+
     // метод ищет юзера в группах, возвращает правда если название группы начинается с "Х", если нет ложь
-    boolean isGroupWithX(Group groupToCheck) {
+    public boolean isGroupWithX(List <Group> groupsToCheck) {
         // проверка на null
-        if (groupToCheck == null) {
-            throw new IllegalArgumentException("User is null!");
+        if (groupsToCheck == null) {
+            throw new IllegalArgumentException("Group is null!");
         }
         // перебор групп
-        for (Group filteredGroup : groups) {
-            if (groupToCheck.toString().startsWith("X")) {
+        for (Group filteredGroup : groupsToCheck) {
+            if (groupsToCheck.toString().startsWith("X")) {
                 return true;
             }
         }

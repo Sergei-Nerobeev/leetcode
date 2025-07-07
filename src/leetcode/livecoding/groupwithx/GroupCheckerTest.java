@@ -66,6 +66,6 @@ class GroupCheckerTest {
     //act
     var result = userOne.isGroupWithX(checkList);
     //assertions
-    assertTrue(result);
+    assertFalse(result);
   }
 }

@@ -16,7 +16,7 @@ public class User {
     // метод возвращает правда если название группы начинается с "Х", если нет ложь
     public boolean isGroupWithX(List<Group> groupsToCheck) {
         // проверка на null
-        if (isGroupsContainsNull(groupsToCheck)) {
+        if (isGroupsNotContainsNull(groupsToCheck)) {
             for (Group filteredGroup : groupsToCheck) {
                 if (filteredGroup.getTitle().startsWith("X")) {
                     return true;
@@ -26,7 +26,7 @@ public class User {
         return false;
     }
 
-    private boolean isGroupsContainsNull(List<Group> groupsToCheck) {
+    private boolean isGroupsNotContainsNull(List<Group> groupsToCheck) {
 
         for (Group filteredGroup : groupsToCheck) {
             if (filteredGroup == null || filteredGroup.getTitle() == null) {

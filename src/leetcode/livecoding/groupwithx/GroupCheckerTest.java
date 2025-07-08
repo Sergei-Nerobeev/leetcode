@@ -53,7 +53,7 @@ class GroupCheckerTest {
     @DisplayName("Should return true when title of group starts with X.")
     void isGroupWithXReturnTrue_test() {
         //arrange
-        List<Group> checkList = Arrays.asList(xenon, zero);
+        List<Group> checkList = Arrays.asList(xenon, zero,delta);
         //act
         var result = john.isGroupWithX(checkList);
         //assertions

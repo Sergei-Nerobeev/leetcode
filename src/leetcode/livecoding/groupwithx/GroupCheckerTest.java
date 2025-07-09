@@ -81,4 +81,14 @@ class GroupCheckerTest {
         //assertions
         assertFalse(result);
     }
+    @Test
+    @DisplayName("Should return true when group name is null and other group starts X.")
+    void isGroupNameNullWithGroupStartsX_test() {
+        //arrange
+        List<Group> checkList = Arrays.asList(delta, zero, groupNull,xenon);
+        //act
+        var result = john.isGroupWithX(checkList);
+        //assertions
+        assertFalse(result);
+    }
 }

@@ -16,24 +16,22 @@ public class User {
     // метод возвращает правда если название группы начинается с "Х", если нет ложь
     public boolean isGroupWithX(List<Group> groupsToCheck) {
         // проверка на null
-        if (isGroupsNotContainsNull(groupsToCheck)) {
-            for (Group filteredGroup : groupsToCheck) {
-                if (filteredGroup.getTitle().startsWith("X")) {
-                    return true;
-                }
+        if (groupsToCheck == null) {
+            throw new IllegalArgumentException("List of groups contains null.");
+        }
+        for (Group filteredGroup : groupsToCheck) {
+            if (filteredGroup == null) {
+                throw new IllegalArgumentException("Group contains null.");
+            }
+            if (filteredGroup.getTitle() == null) {
+                throw new IllegalArgumentException("Title of group contains null.");
+
+            }
+            if (filteredGroup.getTitle().startsWith("X")) {
+                return true;
             }
         }
         return false;
-    }
-
-    private boolean isGroupsNotContainsNull(List<Group> groupsToCheck) {
-
-        for (Group filteredGroup : groupsToCheck) {
-            if (filteredGroup == null || filteredGroup.getTitle() == null) {
-                return false;
-            }
-        }
-        return true;
     }
 
 

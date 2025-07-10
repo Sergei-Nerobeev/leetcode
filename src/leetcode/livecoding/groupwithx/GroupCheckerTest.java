@@ -8,8 +8,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-import static org.junit.jupiter.api.Assertions.assertFalse;
-import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.junit.jupiter.api.Assertions.*;
 
 @DisplayName("GroupChecker method Test")
 class GroupCheckerTest {
@@ -61,34 +60,35 @@ class GroupCheckerTest {
     }
 
     @Test
-    @DisplayName("Should return false when group is null.")
+    @DisplayName("Should return true when groups contains title with X and null.")
     void isGroupNull_test() {
         //arrange
         List<Group> checkList = Arrays.asList(xenon, zero, groupNull);
         //act
         var result = john.isGroupWithX(checkList);
         //assertions
-        assertFalse(result);
+        assertTrue(result);
     }
 
     @Test
-    @DisplayName("Should return false when group name is null.")
+    @DisplayName("Should return true when group title with X and group title is null.")
     void isGroupNameNull_test() {
         //arrange
         List<Group> checkList = Arrays.asList(xenon, zero, emptyTitle);
         //act
         var result = john.isGroupWithX(checkList);
         //assertions
-        assertFalse(result);
+        assertTrue(result);
     }
     @Test
     @DisplayName("Should return true when group name is null and other group starts X.")
     void isGroupNameNullWithGroupStartsX_test() {
         //arrange
-        List<Group> checkList = Arrays.asList(delta, zero, groupNull,xenon);
+        List<Group> checkList = Arrays.asList(delta, zero, groupNull, xenon);
         //act
-        var result = john.isGroupWithX(checkList);
         //assertions
-        assertFalse(result);
+        assertThrows(IllegalArgumentException.class, () -> {
+            john.isGroupWithX(checkList);
+        }, "Title of group contains null.");
     }
 }

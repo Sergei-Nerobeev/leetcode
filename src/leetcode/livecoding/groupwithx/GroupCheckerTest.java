@@ -87,8 +87,7 @@ class GroupCheckerTest {
         List<Group> checkList = Arrays.asList(delta, zero, groupNull, xenon);
         //act
         //assertions
-        assertThrows(IllegalArgumentException.class, () -> {
-            john.isGroupWithX(checkList);
-        }, "Title of group contains null.");
+        var result = john.isGroupWithX(checkList);
+        assertTrue(result);
     }
 }

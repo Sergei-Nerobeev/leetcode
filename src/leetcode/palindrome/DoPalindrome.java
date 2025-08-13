@@ -11,7 +11,7 @@ public class DoPalindrome {
 
   public static String doPalindrome(String palindrome, String noPalindrome) {
     if (palindrome.isEmpty() || palindrome == noPalindrome) {
-      throw new IllegalArgumentException("Words are not correct");
+      throw new IllegalArgumentException("Word or words are not correct");
     }
     return null;
   }
